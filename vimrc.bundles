@@ -47,5 +47,6 @@ Plug 'tpope/vim-surround'
 Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 Plug 'valloric/youcompleteme'
+Plug 'isruslan/vim-es6'
 
 call plug#end()
