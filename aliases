@@ -12,8 +12,9 @@ alias be='bundle exec'
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 
-# Passenger
-alias p=passenger
+# Misc
+alias pst="passenger start"
+alias mc="mailcatcher -f"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
