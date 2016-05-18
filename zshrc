@@ -44,3 +44,8 @@ _load_settings "$HOME/.zsh/configs"
 
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
+
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
+
+source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
