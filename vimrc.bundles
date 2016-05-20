@@ -48,5 +48,6 @@ Plug 'vim-ruby/vim-ruby'
 Plug 'vim-scripts/tComment'
 Plug 'valloric/youcompleteme'
 Plug 'isruslan/vim-es6'
+Plug 'flomotlik/vim-livereload'
 
 call plug#end()
