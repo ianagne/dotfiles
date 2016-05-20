@@ -49,5 +49,6 @@ Plug 'vim-scripts/tComment'
 Plug 'valloric/youcompleteme'
 Plug 'isruslan/vim-es6'
 Plug 'flomotlik/vim-livereload'
+Plug 'ReplaceWithRegister'
 
 call plug#end()
