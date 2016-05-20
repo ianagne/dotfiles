@@ -1,5 +1,5 @@
 " Leader
-let mapleader = "\<Space> "
+let mapleader = "\<Space>"
 
 set backspace=2   " Backspace deletes like most programs in insert mode
 set nobackup
