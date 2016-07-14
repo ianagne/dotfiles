@@ -101,6 +101,10 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Move cursor by displayed lines vs line numbers
+nnoremap j gj
+nnoremap k gk
+
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
 
