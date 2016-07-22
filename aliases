@@ -9,6 +9,10 @@ alias v="$VISUAL"
 alias b="bundle"
 alias be='bundle exec'
 
+# Heroku
+alias h="heroku"
+alias hl="heroku local"
+
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 
@@ -19,3 +23,4 @@ alias mc="mailcatcher -f"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
