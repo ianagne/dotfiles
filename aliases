@@ -15,6 +15,7 @@ alias hl="heroku local"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
+alias rr="bundle exec rake routes"
 
 # Misc
 alias pst="passenger start"
