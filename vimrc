@@ -127,6 +127,10 @@ map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
 
+" Quickly split panes
+nnoremap <Leader>v :vsplit<CR>
+nnoremap <Leader>s :split<CR>
+
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
 
