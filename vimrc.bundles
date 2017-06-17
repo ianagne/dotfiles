@@ -49,7 +49,6 @@ Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-vividchalk'
 Plug 'vim-ruby/vim-ruby'
-Plug 'valloric/youcompleteme'
 Plug 'isruslan/vim-es6'
 Plug 'ReplaceWithRegister'
 
