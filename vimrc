@@ -129,7 +129,6 @@ nnoremap <Leader>r :RunInInteractiveShell<space>
 
 " Quickly split panes
 nnoremap <Leader>v :vsplit<CR>
-nnoremap <Leader>s :split<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
@@ -143,6 +142,9 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
+
+" Quicker saving
+nnoremap <Leader>s <esc>:w<CR>
 
 " Map ; to : so I don't have to hold shift for vim commands
 nnoremap : ;
