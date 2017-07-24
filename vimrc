@@ -168,7 +168,12 @@ let g:neomake_serialize_abort_on_error = 1
 " Tell Neomake to highlight the entire line when it finds and error
 let g:neomake_highlight_lines = 1
 
-" Use ESC to exit terminal
 if has('nvim')
+  " Use ESC to exit terminal
   tnoremap <Esc> <C-\><C-n>
+  " Easier navigation between terminal and other panes
+  tnoremap <c-h> <c-\><c-n><c-w>h
+  tnoremap <c-j> <c-\><c-n><c-w>j
+  tnoremap <c-k> <c-\><c-n><c-w>k
+  tnoremap <c-l> <c-\><c-n><c-w>l
 endif
