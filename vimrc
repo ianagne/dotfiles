@@ -101,6 +101,14 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+" Open gitsh in a vertical split
+function! OpenGitsh()
+  execute 'vsplit'
+  execute 'terminal gitsh'
+endfunction
+
+nnoremap <silent> <Leader>g :call OpenGitsh()<CR>
+
 " Move cursor by displayed lines vs line numbers
 nnoremap j gj
 nnoremap k gk
