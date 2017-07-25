@@ -45,6 +45,10 @@ _load_settings "$HOME/.zsh/configs"
 # Local config
 [[ -f ~/.zshrc.local ]] && source ~/.zshrc.local
 
+# Set cdpath
+setopt auto_cd
+cdpath=($HOME/Projects)
+
 export PATH="$HOME/.bin:$PATH"
 eval "$(rbenv init -)"
 eval "$(pyenv init -)"
