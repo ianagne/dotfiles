@@ -125,7 +125,7 @@ nnoremap <silent> <Leader>a :TestSuite<CR>
 nnoremap <silent> <leader>gt :TestVisit<CR>
 
 " :e to the current directory
-map <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Run commands that require an interactive shell
 nnoremap <Leader>r :RunInInteractiveShell<space>
@@ -141,10 +141,10 @@ set splitbelow
 set splitright
 
 " Quicker window movement
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-h> <C-w>h
-nnoremap <C-l> <C-w>l
+nnoremap <C-j> <c-w>j
+nnoremap <C-k> <c-w>k
+nnoremap <C-h> <c-w>h
+nnoremap <C-l> <c-w>l
 
 " Quicker saving
 nnoremap <Leader>s <esc>:w<CR>
