@@ -174,6 +174,9 @@ let g:neomake_highlight_lines = 1
 " Use neoterm for vim-test
 let test#strategy='neoterm'
 
+" Use a vertical split when opening terminal for tests
+let g:neoterm_position = "vertical"
+
 colorscheme jellybeans
 
 if has('nvim')
