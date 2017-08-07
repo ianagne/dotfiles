@@ -171,6 +171,9 @@ let g:neomake_serialize_abort_on_error = 1
 " Tell Neomake to highlight the entire line when it finds and error
 let g:neomake_highlight_lines = 1
 
+" Use neoterm for vim-test
+let test#strategy='neoterm'
+
 colorscheme jellybeans
 
 if has('nvim')
