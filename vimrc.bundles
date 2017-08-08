@@ -2,58 +2,36 @@ if &compatible
   set nocompatible
 end
 
-" Shim command and function to allow migration from Vundle to vim-plug.
-function! VundleToPlug(vundle_command, arg, ...)
-  echom "You are using Vundle's `".a:vundle_command."` command to declare plugins. Dotfiles now uses vim-plug for plugin mangagement. Please rename uses of `".a:vundle_command."` to `Plug`. Plugin was '".a:arg."'."
-  let vim_plug_options = {}
-
-  if a:0 > 0
-    if has_key(a:1, 'name')
-      let name = a:1.name
-      let vim_plug_options.dir = "$HOME/.vim/bundle/".a:1.name
-    endif
-
-    if has_key(a:1, 'rtp')
-      let vim_plug_options.rtp = a:1.rtp
-    endif
-  endif
-
-  Plug a:arg, vim_plug_options
-endfunction
-
-com! -nargs=+  -bar Plugin call VundleToPlug("Plugin", <args>)
-com! -nargs=+  -bar Bundle call VundleToPlug("Bundle", <args>)
-
-call plug#begin('~/.vim/bundle')
+packadd minpac
+call minpac#init({'verbose': 3})
 
 " Define bundles via Github repos
-Plug 'christoomey/vim-run-interactive'
-Plug 'ctrlpvim/ctrlp.vim'
-Plug 'derekprior/vim-trimmer'
-Plug 'elixir-lang/vim-elixir'
-Plug 'skwp/greplace.vim'
-Plug 'neomake/neomake'
-Plug 'fatih/vim-go'
-Plug 'janko-m/vim-test'
-Plug 'kassio/neoterm'
-Plug 'kchmck/vim-coffee-script'
-Plug 'pbrisbin/vim-mkdir'
-Plug 'slim-template/vim-slim'
-Plug 'tpope/vim-bundler'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-endwise'
-Plug 'tpope/vim-eunuch'
-Plug 'tpope/vim-fugitive'
-Plug 'tpope/vim-projectionist'
-Plug 'tpope/vim-rails'
-Plug 'tpope/vim-rake'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-vividchalk'
-Plug 'townk/vim-autoclose'
-Plug 'vim-ruby/vim-ruby'
-Plug 'isruslan/vim-es6'
-Plug 'ReplaceWithRegister'
-Plug 'nanotech/jellybeans.vim'
-
-call plug#end()
+call minpac#add('k-takata/minpac', {'type':'opt'})
+call minpac#add('christoomey/vim-run-interactive')
+call minpac#add('ctrlpvim/ctrlp.vim')
+call minpac#add('derekprior/vim-trimmer')
+call minpac#add('elixir-lang/vim-elixir')
+call minpac#add('skwp/greplace.vim')
+call minpac#add('neomake/neomake')
+call minpac#add('fatih/vim-go')
+call minpac#add('janko-m/vim-test')
+call minpac#add('kassio/neoterm')
+call minpac#add('kchmck/vim-coffee-script')
+call minpac#add('pbrisbin/vim-mkdir')
+call minpac#add('slim-template/vim-slim')
+call minpac#add('tpope/vim-bundler')
+call minpac#add('tpope/vim-commentary')
+call minpac#add('tpope/vim-endwise')
+call minpac#add('tpope/vim-eunuch')
+call minpac#add('tpope/vim-fugitive')
+call minpac#add('tpope/vim-projectionist')
+call minpac#add('tpope/vim-rails')
+call minpac#add('tpope/vim-rake')
+call minpac#add('tpope/vim-repeat')
+call minpac#add('tpope/vim-surround')
+call minpac#add('tpope/vim-vividchalk')
+call minpac#add('townk/vim-autoclose')
+call minpac#add('vim-ruby/vim-ruby')
+call minpac#add('isruslan/vim-es6')
+call minpac#add('vim-scripts/ReplaceWithRegister')
+call minpac#add('nanotech/jellybeans.vim')
