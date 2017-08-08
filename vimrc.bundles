@@ -5,6 +5,9 @@ end
 packadd minpac
 call minpac#init({'verbose': 3})
 
+command! PackUpdate call minpac#update()
+command! PackClean call minpac#clean()
+
 " Define bundles via Github repos
 call minpac#add('k-takata/minpac', {'type':'opt'})
 call minpac#add('christoomey/vim-run-interactive')
