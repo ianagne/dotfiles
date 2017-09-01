@@ -12,7 +12,7 @@ alias be='bundle exec'
 
 # Heroku
 alias h="heroku"
-alias hl="heroku local"
+alias hl="heroku local -f Procfile.local"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
