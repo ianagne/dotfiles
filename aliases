@@ -4,11 +4,15 @@ alias ln="ln -v"
 alias mkdir="mkdir -p"
 alias e="$EDITOR"
 alias v="$VISUAL"
-alias dot="cd ~/.dotfiles"
+alias dot="e ~/.dotfiles"
 
 # Bundler
 alias b="bundle"
 alias be='bundle exec'
+
+# Git
+alias gcb="git create-branch"
+alias gdb="git delete-branch"
 
 # Heroku
 alias h="heroku"
