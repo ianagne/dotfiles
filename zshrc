@@ -49,10 +49,4 @@ _load_settings "$HOME/.zsh/configs"
 setopt auto_cd
 cdpath=($HOME/Projects)
 
-export PATH="$HOME/.bin:$PATH"
-eval "$(rbenv init -)"
-eval "$(pyenv init -)"
-
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
-
-eval "$(rbenv init - --no-rehash)"
