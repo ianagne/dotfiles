@@ -50,3 +50,5 @@ setopt auto_cd
 cdpath=($HOME/Projects)
 
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
+
+export PATH="$HOME/.bin:$PATH"
