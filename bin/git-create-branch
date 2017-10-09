@@ -2,8 +2,9 @@
 
 set -e
 
-git push origin "HEAD:refs/heads/$1"
+branchName="ia-$1"
+git push origin "HEAD:refs/heads/$branchName"
 git fetch origin
-git branch --track "$1" "origin/$1"
+git branch --track "$branchName" "origin/$branchName"
 cd .
-git checkout "$1"
+git checkout "$branchName"
