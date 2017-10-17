@@ -52,4 +52,4 @@ cdpath=($HOME/Projects)
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
 export PATH="$HOME/.bin:$PATH"
-source /Users/iagne/.asdf/asdf.sh
+source $HOME/.asdf/asdf.sh
