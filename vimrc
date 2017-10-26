@@ -104,34 +104,8 @@ inoremap <S-Tab> <c-n>
 command! -nargs=* VT vsplit | terminal <args>
 nnoremap <silent> <Leader>g :VT<CR>
 
-" Move cursor by displayed lines vs line numbers
-nnoremap j gj
-nnoremap k gk
-
 " Switch between the last two files
 nnoremap <leader><leader> <c-^>
-
-" Get off my lawn
-nnoremap <Left> :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up> :echoe "Use k"<CR>
-nnoremap <Down> :echoe "Use j"<CR>
-
-" vim-test mappings
-nnoremap <silent> <Leader>t :TestFile<CR>
-nnoremap <silent> <Leader>n :TestNearest<CR>
-nnoremap <silent> <Leader>l :TestLast<CR>
-nnoremap <silent> <Leader>a :TestSuite<CR>
-nnoremap <silent> <leader>gt :TestVisit<CR>
-
-" :e to the current directory
-nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
-
-" Run commands that require an interactive shell
-nnoremap <Leader>r :RunInInteractiveShell<space>
-
-" Quickly split panes
-nnoremap <Leader>v :vsplit<CR>
 
 " Treat <li> and <p> tags like the block tags they are
 let g:html_indent_tags = 'li\|p'
@@ -139,19 +113,6 @@ let g:html_indent_tags = 'li\|p'
 " Open new split panes to right and bottom, which feels more natural
 set splitbelow
 set splitright
-
-" Quicker window movement
-nnoremap <C-j> <c-w>j
-nnoremap <C-k> <c-w>k
-nnoremap <C-h> <c-w>h
-nnoremap <C-l> <c-w>l
-
-" Quicker saving
-nnoremap <Leader>s <esc>:w<CR>
-
-" Map ; to : so I don't have to hold shift for vim commands
-nnoremap : ;
-nnoremap ; :
 
 " Set spellfile to location that is guaranteed to exist, can be symlinked to
 " Dropbox or kept in Git and managed outside of thoughtbot/dotfiles using rcm.
@@ -177,7 +138,43 @@ let test#strategy='neoterm'
 " Use a vertical split when opening terminal for tests
 let g:neoterm_position = "vertical"
 
-colorscheme jellybeans
+nnoremap <Leader>ra :%s/
+
+" Move cursor by displayed lines vs line numbers
+nnoremap j gj
+nnoremap k gk
+
+" Get off my lawn
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
+" vim-test mappings
+nnoremap <silent> <Leader>t :TestFile<CR>
+nnoremap <silent> <Leader>n :TestNearest<CR>
+nnoremap <silent> <Leader>l :TestLast<CR>
+nnoremap <silent> <Leader>a :TestSuite<CR>
+nnoremap <silent> <leader>gt :TestVisit<CR>
+
+" :e to the current directory
+nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
+
+" Quickly split panes
+nnoremap <Leader>v :vsplit<CR>
+
+" Quicker window movement
+nnoremap <C-j> <c-w>j
+nnoremap <C-k> <c-w>k
+nnoremap <C-h> <c-w>h
+nnoremap <C-l> <c-w>l
+
+" Quicker saving
+nnoremap <Leader>s <esc>:w<CR>
+
+" Map ; to : so I don't have to hold shift for vim commands
+nnoremap : ;
+nnoremap ; :
 
 if has('nvim')
   " Use ESC to exit terminal
@@ -188,3 +185,5 @@ if has('nvim')
   tnoremap <c-k> <c-\><c-n><c-w>k
   tnoremap <c-l> <c-\><c-n><c-w>l
 endif
+
+colorscheme jellybeans
