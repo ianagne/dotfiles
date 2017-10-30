@@ -6,14 +6,14 @@ tap "homebrew/services"
 tap "homebrew/versions"
 tap "neovim/neovim"
 tap "thoughtbot/formulae"
-cask "java"
+tap "universal-ctags/universal-ctags"
+brew "universal-ctags", args: ["HEAD"]
 brew "apr"
 brew "openssl"
 brew "apr-util"
 brew "augeas"
 brew "autoconf"
 brew "chromedriver", restart_service: true
-brew "ctags"
 brew "dialog"
 brew "elasticsearch", restart_service: true
 brew "gdbm"
