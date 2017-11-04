@@ -48,6 +48,8 @@ augroup vimrcEx
   autocmd BufRead,BufNewFile Appraisals set filetype=ruby
   autocmd BufRead,BufNewFile *.md set filetype=markdown
   autocmd BufRead,BufNewFile .{jscs,jshint,eslint}rc set filetype=json
+  autocmd BufNewFile,BufRead *.slim setlocal filetype=slim
+  autocmd BufNewFile,BufRead *.slime setlocal filetype=slim
 augroup END
 
 " When the type of shell script is /bin/sh, assume a POSIX-compatible
