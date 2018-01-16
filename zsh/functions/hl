@@ -1,0 +1,7 @@
+hl() {
+  if [ -f Procfile.dev ]; then
+    heroku local -f Procfile.dev
+  else
+    heroku local "$@"
+  fi
+}

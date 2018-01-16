@@ -16,7 +16,6 @@ alias gdb="git delete-branch"
 
 # Heroku
 alias h="heroku"
-alias hl="heroku local"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
