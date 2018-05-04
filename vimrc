@@ -138,7 +138,7 @@ let g:neomake_highlight_lines = 1
 let test#strategy='neoterm'
 
 " Use a vertical split when opening terminal for tests
-let g:neoterm_position = "vertical"
+let g:neoterm_default_mod = "vertical"
 
 nnoremap <Leader>ra :%s/
 
