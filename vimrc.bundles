@@ -39,3 +39,7 @@ call minpac#add('vim-ruby/vim-ruby')
 call minpac#add('isruslan/vim-es6')
 call minpac#add('vim-scripts/ReplaceWithRegister')
 call minpac#add('nanotech/jellybeans.vim')
+
+" TypeScript
+call minpac#add('leafgarland/typescript-vim')
+call minpac#add('Quramy/tsuquyomi')
