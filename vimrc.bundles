@@ -13,7 +13,6 @@ call minpac#add('k-takata/minpac', {'type':'opt'})
 call minpac#add('christoomey/vim-run-interactive')
 call minpac#add('ctrlpvim/ctrlp.vim')
 call minpac#add('derekprior/vim-trimmer')
-call minpac#add('elixir-lang/vim-elixir')
 call minpac#add('elmcast/elm-vim')
 call minpac#add('skwp/greplace.vim')
 call minpac#add('neomake/neomake')
@@ -30,15 +29,21 @@ call minpac#add('tpope/vim-endwise')
 call minpac#add('tpope/vim-eunuch')
 call minpac#add('tpope/vim-fugitive')
 call minpac#add('tpope/vim-projectionist')
-call minpac#add('tpope/vim-rails')
-call minpac#add('tpope/vim-rake')
 call minpac#add('tpope/vim-repeat')
 call minpac#add('tpope/vim-surround')
 call minpac#add('townk/vim-autoclose')
-call minpac#add('vim-ruby/vim-ruby')
 call minpac#add('isruslan/vim-es6')
 call minpac#add('vim-scripts/ReplaceWithRegister')
 call minpac#add('nanotech/jellybeans.vim')
+
+" Ruby
+call minpac#add('vim-ruby/vim-ruby')
+call minpac#add('tpope/vim-rails')
+call minpac#add('tpope/vim-rake')
+
+" Elixir
+call minpac#add('elixir-lang/vim-elixir')
+call minpac#add('slashmili/alchemist.vim')
 
 " TypeScript
 call minpac#add('leafgarland/typescript-vim')
