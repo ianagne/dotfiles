@@ -140,6 +140,7 @@ let g:neomake_highlight_lines = 1
 
 " Enable credo maker for elixir
 let g:neomake_elixir_enabled_makers = ['mix', 'credo']
+let g:neomake_html_enabled_makers = []
 
 " Use neoterm for vim-test
 let test#strategy='neoterm'
