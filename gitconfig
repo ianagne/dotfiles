@@ -26,3 +26,6 @@
   path = ~/.gitconfig.local
 [credential]
 	helper = cache
+[user]
+  name = Ian Agne
+  email = ian.d.agne@gmail.com
