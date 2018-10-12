@@ -131,18 +131,6 @@ set complete+=kspell
 " Always use vertical diffs
 set diffopt+=vertical
 
-" Run NeoMake on read and write operations
-autocmd! BufReadPost,BufWritePost * Neomake
-let g:neomake_serialize = 1
-let g:neomake_serialize_abort_on_error = 1
-
-" Tell Neomake to highlight the entire line when it finds and error
-let g:neomake_highlight_lines = 1
-
-" Enable credo maker for elixir
-let g:neomake_elixir_enabled_makers = ['mix', 'credo']
-let g:neomake_html_enabled_makers = []
-
 " Use neoterm for vim-test
 let test#strategy='neoterm'
 
@@ -173,6 +161,14 @@ nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Quickly split panes
 nnoremap <Leader>v :vsplit<CR>
+
+" ALE Config
+
+let g:ale_fix_on_save = 1 " Fix files on save
+let g:ale_fixers = {
+      \  '*': ['remove_trailing_lines', 'trim_whitespace'],
+      \'elixir': ['mix_format'],
+      \}
 
 " Quicker window movement
 nnoremap <C-j> <c-w>j
