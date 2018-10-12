@@ -80,6 +80,7 @@ let g:fzf_files_options =
 
 " Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
 if executable('ag')
+  nnoremap <C-F> :Ag<cr>
   " Use Ag over Grep
   set grepprg=ag\ --nocolor
   let $FZF_DEFAULT_COMMAND='ag -g "" --hidden'
