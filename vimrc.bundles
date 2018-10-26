@@ -33,7 +33,6 @@ call minpac#add('tpope/vim-surround')
 call minpac#add('townk/vim-autoclose')
 call minpac#add('isruslan/vim-es6')
 call minpac#add('vim-scripts/ReplaceWithRegister')
-call minpac#add('digitaltoad/vim-pug')
 call minpac#add('w0rp/ale')
 
 " Visual
@@ -48,6 +47,11 @@ call minpac#add('tpope/vim-rake')
 " Elixir
 call minpac#add('elixir-lang/vim-elixir')
 call minpac#add('slashmili/alchemist.vim')
+
+" JavaScript
+call minpac#add('digitaltoad/vim-pug')
+call minpac#add('pangloss/vim-javascript')
+call minpac#add('posva/vim-vue')
 
 " TypeScript
 call minpac#add('leafgarland/typescript-vim')
