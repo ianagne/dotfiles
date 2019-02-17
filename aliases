@@ -14,17 +14,13 @@ alias be='bundle exec'
 alias gcb="git create-branch"
 alias gdb="git delete-branch"
 
-# Heroku
+# Hosting Services
 alias h="heroku"
+alias giga="gigalixir"
 
 # Rails
 alias migrate="rake db:migrate db:rollback && rake db:migrate db:test:prepare"
 alias rr="bundle exec rake routes"
-
-# Misc
-alias pst="passenger start"
-alias fst="foreman start"
-alias mc="mailcatcher -f"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
