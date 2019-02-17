@@ -175,6 +175,7 @@ let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
       \'elixir': ['mix_format'],
       \'javascript': ['prettier'],
+      \'json': ['prettier'],
       \'vue': ['prettier'],
       \'scss': ['prettier'],
       \}
