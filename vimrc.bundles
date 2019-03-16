@@ -34,6 +34,7 @@ call minpac#add('townk/vim-autoclose')
 call minpac#add('isruslan/vim-es6')
 call minpac#add('vim-scripts/ReplaceWithRegister')
 call minpac#add('w0rp/ale')
+call minpac#add('neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'})
 
 " Visual
 call minpac#add('itchyny/lightline.vim')
