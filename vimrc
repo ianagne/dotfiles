@@ -165,7 +165,18 @@ nnoremap <Leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 " Quickly split panes
 nnoremap <Leader>v :vsplit<CR>
 
-" ALE Config
+" # coc.nvim config
+
+" navigate the autocomplete options with tab and shift-tab
+inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+
+" enter key will select the autocomplete option
+let g:endwise_no_mappings = 1
+imap <C-X><CR>   <CR><Plug>AlwaysEnd
+imap <expr> <CR> (pumvisible() ? "\<C-Y>\<Plug>DiscretionaryEnd" : "\<CR>\<Plug>DiscretionaryEnd")
+
+" # ALE Config
 
 " Only run linters that have been turned on
 " Otherwise, the code will be fixed, but full of linter errors
