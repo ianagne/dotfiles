@@ -170,6 +170,7 @@ nnoremap <Leader>v :vsplit<CR>
 " navigate the autocomplete options with tab and shift-tab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
+inoremap <expr> <esc> pumvisible() ? "\<esc>\<esc>" : "\<esc>"
 
 " enter key will select the autocomplete option
 let g:endwise_no_mappings = 1
