@@ -183,11 +183,16 @@ imap <expr> <CR> (pumvisible() ? "\<C-Y>\<Plug>DiscretionaryEnd" : "\<CR>\<Plug>
 " Otherwise, the code will be fixed, but full of linter errors
 let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1 " Fix files on save
+let g:ale_linters = {
+      \ 'elixir': ['credo', 'dialyxir'],
+      \ 'ruby': ['standardrb'],
+      \}
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
       \'elixir': ['mix_format'],
       \'javascript': ['prettier'],
       \'json': ['prettier'],
+      \'ruby': ['standardrb'],
       \'vue': ['prettier'],
       \'scss': ['prettier'],
       \}
