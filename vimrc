@@ -167,6 +167,10 @@ nnoremap <Leader>v :vsplit<CR>
 
 " # coc.nvim config
 
+let g:coc_global_extensions = [
+  \ 'coc-solargraph',
+\ ]
+
 " navigate the autocomplete options with tab and shift-tab
 inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
 inoremap <expr> <S-Tab> pumvisible() ? "\<C-p>" : "\<S-Tab>"
