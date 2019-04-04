@@ -24,3 +24,7 @@ alias rr="bundle exec rake routes"
 
 # Pretty print the path
 alias path='echo $PATH | tr -s ":" "\n"'
+
+# Applications
+alias s="bin/server"
+alias c="bin/console"
