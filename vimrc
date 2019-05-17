@@ -194,6 +194,7 @@ let g:ale_linters = {
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
       \'elixir': ['mix_format'],
+      \'html': ['prettier'],
       \'javascript': ['prettier'],
       \'json': ['prettier'],
       \'ruby': ['standardrb'],
