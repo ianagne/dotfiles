@@ -52,5 +52,7 @@ cdpath=($HOME/Projects)
 
 source "/usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh"
 
+export GOPATH=~/go
+export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.bin:$PATH"
 source $HOME/.asdf/asdf.sh
