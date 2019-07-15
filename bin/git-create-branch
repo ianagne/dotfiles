@@ -2,7 +2,7 @@
 
 set -e
 
-branchName="ia-$1"
+branchName="ia/$1"
 git push origin "HEAD:refs/heads/$branchName"
 git fetch origin
 git branch --track "$branchName" "origin/$branchName"
