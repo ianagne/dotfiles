@@ -11,3 +11,4 @@ tmp/**/*
 *.pyc
 .vscode/
 .tool-versions
+.envrc
