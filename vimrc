@@ -189,7 +189,7 @@ let g:ale_linters_explicit = 1
 let g:ale_fix_on_save = 1 " Fix files on save
 let g:ale_linters = {
       \ 'elixir': ['credo', 'dialyxir'],
-      \ 'ruby': ['standardrb'],
+      \ 'ruby': ['rubocop'],
       \}
 let g:ale_fixers = {
       \  '*': ['remove_trailing_lines', 'trim_whitespace'],
@@ -197,7 +197,6 @@ let g:ale_fixers = {
       \'html': ['prettier'],
       \'javascript': ['prettier'],
       \'json': ['prettier'],
-      \'ruby': ['standardrb'],
       \'vue': ['prettier'],
       \'scss': ['prettier'],
       \}
@@ -214,6 +213,18 @@ nnoremap <Leader>s <esc>:w<CR>
 " Map ; to : so I don't have to hold shift for vim commands
 nnoremap : ;
 nnoremap ; :
+
+"  `.vim/after/ftplugin/elixir.vim` or `.vimrc`, whatever you prefer
+function! ElixirUmbrellaTransform(cmd) abort
+  if match(a:cmd, 'apps/') != -1
+    return substitute(a:cmd, 'mix test apps/\([^/]*\)/', 'mix cmd --app \1 mix test --color ', '')
+  else
+    return a:cmd
+  end
+endfunction
+
+let g:test#custom_transformations = {'elixir_umbrella': function('ElixirUmbrellaTransform')}
+let g:test#transformation = 'elixir_umbrella'
 
 if has('nvim')
   " Use ESC to exit terminal
