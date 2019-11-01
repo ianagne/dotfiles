@@ -28,3 +28,6 @@ alias path='echo $PATH | tr -s ":" "\n"'
 # Applications
 alias s="bin/server"
 alias c="bin/console"
+
+# Itermocil
+alias trr="itermocil ~/.teamocil/trr"
