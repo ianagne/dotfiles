@@ -2,6 +2,6 @@
 
 set -e
 
-branchName=${1-master}
+branchName=${1-main}
 commitCount=$(git count $branchName)
 git rebase -i HEAD~$commitCount
