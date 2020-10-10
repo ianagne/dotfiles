@@ -199,6 +199,7 @@ let g:ale_fixers = {
       \'json': ['prettier'],
       \'vue': ['prettier'],
       \'scss': ['prettier'],
+      \'ruby': ['rubocop'],
       \}
 
 " Quicker window movement
