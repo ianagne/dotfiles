@@ -57,3 +57,5 @@ export PATH=$PATH:$GOPATH/bin
 export PATH="$HOME/.bin:$PATH"
 eval "$(direnv hook zsh)"
 source $HOME/.asdf/asdf.sh
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
