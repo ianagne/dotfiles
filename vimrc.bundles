@@ -2,58 +2,55 @@ if &compatible
   set nocompatible
 end
 
-packadd minpac
-call minpac#init({'verbose': 3})
-
-command! PackUpdate call minpac#update()
-command! PackClean call minpac#clean()
+call plug#begin('~/.vim/bundle')
 
 " Define bundles via Github repos
-call minpac#add('k-takata/minpac', {'type':'opt'})
-call minpac#add('christoomey/vim-run-interactive')
-call minpac#add('elmcast/elm-vim')
-call minpac#add('jiangmiao/auto-pairs')
-call minpac#add('junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' })
-call minpac#add('junegunn/fzf.vim')
-call minpac#add('skwp/greplace.vim')
-call minpac#add('fatih/vim-go')
-call minpac#add('janko-m/vim-test')
-call minpac#add('kassio/neoterm')
-call minpac#add('kchmck/vim-coffee-script')
-call minpac#add('pbrisbin/vim-mkdir')
-call minpac#add('slim-template/vim-slim')
-call minpac#add('rhysd/vim-crystal')
-call minpac#add('tpope/vim-bundler')
-call minpac#add('tpope/vim-commentary')
-call minpac#add('tpope/vim-endwise')
-call minpac#add('tpope/vim-eunuch')
-call minpac#add('tpope/vim-fugitive')
-call minpac#add('tpope/vim-projectionist')
-call minpac#add('tpope/vim-repeat')
-call minpac#add('tpope/vim-surround')
-call minpac#add('isruslan/vim-es6')
-call minpac#add('vim-scripts/ReplaceWithRegister')
-call minpac#add('w0rp/ale')
-call minpac#add('neoclide/coc.nvim', {'tag': '*', 'do': './install.sh'})
+Plug 'christoomey/vim-run-interactive'
+Plug 'elmcast/elm-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'skwp/greplace.vim'
+Plug 'fatih/vim-go'
+Plug 'janko-m/vim-test'
+Plug 'kassio/neoterm'
+Plug 'kchmck/vim-coffee-script'
+Plug 'pbrisbin/vim-mkdir'
+Plug 'slim-template/vim-slim'
+Plug 'rhysd/vim-crystal'
+Plug 'tpope/vim-bundler'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-eunuch'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-projectionist'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'isruslan/vim-es6'
+Plug 'vim-scripts/ReplaceWithRegister'
+Plug 'w0rp/ale'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Visual
-call minpac#add('itchyny/lightline.vim')
-call minpac#add('nanotech/jellybeans.vim')
+Plug 'itchyny/lightline.vim'
+Plug 'nanotech/jellybeans.vim'
 
 " Ruby
-call minpac#add('vim-ruby/vim-ruby')
-call minpac#add('tpope/vim-rails')
-call minpac#add('tpope/vim-rake')
+Plug 'vim-ruby/vim-ruby'
+Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rake'
 
 " Elixir
-call minpac#add('elixir-lang/vim-elixir')
-call minpac#add('slashmili/alchemist.vim')
+Plug 'elixir-lang/vim-elixir'
+Plug 'slashmili/alchemist.vim'
 
 " JavaScript
-call minpac#add('digitaltoad/vim-pug')
-call minpac#add('pangloss/vim-javascript')
-call minpac#add('posva/vim-vue')
+Plug 'digitaltoad/vim-pug'
+Plug 'pangloss/vim-javascript'
+Plug 'posva/vim-vue'
 
 " TypeScript
-call minpac#add('leafgarland/typescript-vim')
-call minpac#add('Quramy/tsuquyomi')
+Plug 'leafgarland/typescript-vim'
+Plug 'Quramy/tsuquyomi'
+
+call plug#end()
