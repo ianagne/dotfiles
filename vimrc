@@ -74,19 +74,25 @@ set list listchars=tab:»·,trail:·,nbsp:·
 " Use one space, not two, after punctuation.
 set nojoinspaces
 
-" FZF
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin: fzf & ripgrep
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" map ctrl+p to fzf
 nnoremap <C-p> :Files<cr>
+
+" Use ripgrep as default file search
+let $FZF_DEFAULT_COMMAND='rg --files --hidden'
+
+" use coderay gem if available to give fzf previews syntax highlighting
 let g:fzf_files_options =
   \ '--reverse ' .
   \ '--preview "(coderay {} || cat {}) 2> /dev/null | head -'.&lines.'"'
 
-" Use The Silver Searcher https://github.com/ggreer/the_silver_searcher
-if executable('ag')
-  nnoremap <C-F> :Ag<cr>
-  " Use Ag over Grep
-  set grepprg=ag\ --nocolor
-  let $FZF_DEFAULT_COMMAND='ag -g "" --hidden'
-endif
+" map ctrl+f to ripgrep
+nnoremap <C-F> :Rg<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 " Make it obvious where 80 characters is
 set textwidth=80
