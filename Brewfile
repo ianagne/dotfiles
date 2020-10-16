@@ -1,4 +1,3 @@
-tap "caskroom/cask"
 tap "heroku/brew"
 tap "neovim/neovim"
 tap "thoughtbot/formulae"
@@ -14,7 +13,7 @@ brew "postgresql", restart_service: true
 brew "redis", restart_service: true
 brew "siege"
 brew "ssh-copy-id"
-brew "the_silver_searcher"
+brew "ripgrep"
 brew "vim"
 brew "zsh"
 brew "zsh-syntax-highlighting"
@@ -26,3 +25,7 @@ brew "yarn"
 brew "exa"
 brew "fzf"
 brew "direnv"
+
+/* Ruby dependencies */
+brew "openssl"
+brew "readline"
