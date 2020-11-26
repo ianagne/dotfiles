@@ -31,3 +31,6 @@ alias c="bin/console"
 
 # Itermocil
 alias trr="itermocil ~/.teamocil/trr"
+
+# git open
+alias go="git open"

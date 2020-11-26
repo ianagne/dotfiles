@@ -26,6 +26,9 @@ brew "exa"
 brew "fzf"
 brew "direnv"
 
+/* `git open` to open the repo website in your browser - https://github.com/paulirish/git-open */
+brew "git-open"
+
 /* Ruby dependencies */
 brew "openssl"
 brew "readline"
