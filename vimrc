@@ -208,6 +208,12 @@ let g:ale_fixers = {
       \'ruby': ['rubocop'],
       \}
 
+" Sometimes syntax highlighting can get out of sync in large JSX and TSX files.
+" Re-scan the buffer when entering potential React files.
+" Disable the scan when leaving said files.
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+
 " Quicker window movement
 nnoremap <C-j> <c-w>j
 nnoremap <C-k> <c-w>k
